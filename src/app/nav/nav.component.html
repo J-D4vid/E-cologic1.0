@@ -1,0 +1,94 @@
+<mat-sidenav-container class="sidenav-container" color="primary">
+  <mat-sidenav 
+      mode = "side" [(opened)] = 'opened'
+      #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar><button class = "button_open_nav"mat-button  (click)="opened=!opened" style="font-family: Material Icons; margin-left: 0%;"><h1 id="Menu" class="color2">Menu</h1>
+    </button></mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#" class="color2"><b>Meu Perfil</b></a>
+      <a mat-list-item href="#" class="color2"><b>Contate-nos</b></a>
+      <a mat-list-item href="#" class="color2"><b>Quem somos</b></a>
+    </mat-nav-list>
+    <footer>
+      <div class="referencias">
+     <ul>
+        <h2><strong>Desenvolvedores</strong></h2>
+        <li><a href="https://github.com/guihenry02">Guilherme H.</a></li>
+        <li><a href="https://github.com/J-D4vid">Juan D.</a></li>
+      </ul>
+      <ul>
+        <h2><strong>Contato</strong></h2>
+        <li class="color">81 98867-0727</li>
+        <li class="color">guiluxuuus@gmail.com</li>
+      </ul>
+      <ul>
+        <h2><strong>Parceiras</strong></h2>
+        <li><a>Porto digital</a></li>
+        <li><a>SKA!</a></li>
+      </ul>
+    </div>
+      
+    </footer>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+      <mat-toolbar color="primary" class="toolbar01">
+        <button mat-raised-button class = "button_open_nav"mat-button  (click)="opened=!opened" style="font-family: Material Icons;" id="button"><mat-icon><font color="#2196f3">home</font></mat-icon>
+        </button>
+        <h1 id="name">E-cologic</h1>
+    </mat-toolbar>
+      <div class="main_text">
+        <h1><strong><font color="#2196f360"> Cada pedaço a menos no ambiente,<br> é uma parte a mais <br> que você salva do<font color="green"> planeta</font>!</font></strong></h1>
+        <button mat-flat-button color="primary" id="flat"><a href="https://www.google.com.br/maps/place/Vit%C3%B3ria+de+Santo+Ant%C3%A3o,+PE/@-8.1144956,-35.3042189,14z/data=!4m5!3m4!1s0x7aa54a93d22ad87:0x813856d6816ceb4b!8m2!3d-8.117325!4d-35.2976353" target="_blank">Ponto de Coleta mais Próximo</a></button>
+      </div>
+      <div class="body">
+        <h1 class="t1"><font color="#2196f360">Como funciona</font></h1>
+        <div class="residencia">
+          <h1 class="color1"><b>Residencia</b></h1>
+          <ul class="img">
+            <li><img src="https://i.pinimg.com/736x/44/ed/83/44ed833bcbf970f0408d03618fa6be02.jpg"  height="110vw" alt="imagem de uma agenda"></li>
+            <li><b>acesse nosso calendário<br>e veja o próximo dia de coleta</b></li>
+          </ul>
+            <mat-icon class="seta" >arrow_right_alt</mat-icon>
+          <ul>
+            <li><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-ykNo7d2h91sGlz672siXAHaH3%26pid%3DApi&f=1&ipt=58b614f53383d55b9c1463e258eb513c0f967cd1667a7915c7969bd627a0d1c6&ipo=images" width="110vw" alt="imagem de localização"> </li>
+            <li><b>encontre o ponto<br> de coleta mais próximo</b></li>
+          </ul>
+          <mat-icon class="seta">arrow_right_alt</mat-icon>
+          <ul>
+            <li><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xlr2KfwLhpJ4MAH0KW7w_wHaHa%26pid%3DApi&f=1&ipt=732b4177eeebb4ed7ca05c7377915f85d1514b32502e43ed676768020e2fbb57&ipo=images" width="110vw" alt="imagem de concluido"> </li>
+            <li><b>leve seu E-lixo<br>para o ponto selecionado<br>e agora o resto é com a gente</b></li>
+          </ul>
+          <ul class="final">
+            <li><h2><font color="gray"><b>obrigado por sua colaboração<br>e parabéns por ajudar<br>a salvar o mundo!</b></font></h2></li>
+          </ul>
+        </div>
+        <h1 style="color: gray; padding-bottom:0px;">Ou</h1>
+        <div class="empresa">
+          <h1 class="color1"><b>Empresa</b></h1>
+          <ul>
+            <li><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-ykNo7d2h91sGlz672siXAHaH3%26pid%3DApi&f=1&ipt=58b614f53383d55b9c1463e258eb513c0f967cd1667a7915c7969bd627a0d1c6&ipo=images" width="110vw" alt="imagem de localização"></li>
+            <li><b>informe sua localização<br>para realizar o pedido $</b></li>
+          </ul>
+          <mat-icon class="seta">arrow_right_alt</mat-icon>
+          <ul>
+            <li><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.i_woSfb1dwJP-yzVuby98wHaH6%26pid%3DApi&f=1&ipt=91814643d5d0a76327050ba25831c67747b5296bcbea83ce924abff001b20b78&ipo=images" width="110vw" alt="imagem de formulário"></li>
+            <li><b>preencha o formulário<br>selecione um dos dias disponíveis<br>e aguarde o dia de sua coleta</b></li>
+          </ul>
+          <mat-icon class="seta">arrow_right_alt</mat-icon>
+          <ul>
+            <li><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.X9paXdZhbb-xY_O2E9xnKQHaHa%26pid%3DApi&f=1&ipt=ef88241c1434f59d11b552c5de074ba366ecf628f43073e5f4efd556e5c1dfde&ipo=images" width="110vw" alt="imagem de certificado"></li>
+            <li><b>após a coleta receba<br> seu certificado comprovando as <br> práticas ecologicas da empresa</b></li>
+          </ul>
+          <h1 class="t1" style="color:gray;">ou</h1>
+          <ul>
+            <li><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.OFTRMlT5eSOuuTM8_6jHMAHaHa%26pid%3DApi&f=1&ipt=b9184bdc1bf529ccd9e348e7402b5942b518082ecbba83d2601fd8a05eaceac1&ipo=images" width="110vw" alt="imagem de acordo"></li>
+            <li><b>faça um contrato conosco<br>e tenha ofertas exclusivas</b></li>
+          </ul>
+        </div>
+      </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,12 @@
+header{
+    background-color: #2196f3;
+    position: sticky;
+    top:0;
+    display:flex;
+    justify-content: space-between;
+}
+
+.icon{
+    display: flex;
+    text-align: center;
+}
